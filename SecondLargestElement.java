@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SecondLargestElement {
@@ -9,6 +10,8 @@ public class SecondLargestElement {
         for(int i = 0; i<size; i++){
             System.out.print("Enter the element: ");
             arr[i] = input.nextInt();
+
+            System.out.println(findSecondLargest(arr));
         }
     }
 
@@ -16,5 +19,7 @@ public class SecondLargestElement {
         if(arr.length == 0){
             return -1;
         }
+        Arrays.sort(arr);
+        return arr[0];
     }
 }
