@@ -10,9 +10,8 @@ public class SecondLargestElement {
         for(int i = 0; i<size; i++){
             System.out.print("Enter the element: ");
             arr[i] = input.nextInt();
-
-            System.out.println(findSecondLargest(arr));
         }
+        System.out.println(findSecondLargest(arr));
     }
 
     public static int findSecondLargest(int[] arr){
@@ -20,6 +19,13 @@ public class SecondLargestElement {
             return -1;
         }
         Arrays.sort(arr);
-        return arr[0];
+        int lastIdx = arr.length-1;
+        if (arr[lastIdx] != arr[lastIdx-1]){
+            return arr[lastIdx-1];
+        }
+        while (arr[lastIdx] == arr[lastIdx-1]){
+            lastIdx--;
+        }
+        return arr[lastIdx-1];
     }
 }
