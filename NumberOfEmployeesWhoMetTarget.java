@@ -22,3 +22,6 @@ public class NumberOfEmployeesWhoMetTarget {
         return count;
     }
 }
+
+
+//https://leetcode.com/problems/number-of-employees-who-met-the-target/description/
