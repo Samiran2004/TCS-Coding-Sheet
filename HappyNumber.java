@@ -25,5 +25,6 @@ public class HappyNumber {
         System.out.print("Enter the number: ");
         int num = input.nextInt();
         System.out.println(isHappyNumber(num));
+        input.close();
     }
 }

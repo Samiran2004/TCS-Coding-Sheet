@@ -15,6 +15,7 @@ public class RotateAnArrayByKthElement {
         int k = input.nextInt();
         rotateArray(arr,k);
         System.out.println(Arrays.toString(arr));
+        input.close();
     }
 
     public static void rotateArray(int[] arr, int k){

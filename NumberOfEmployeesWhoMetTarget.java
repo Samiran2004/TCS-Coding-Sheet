@@ -13,6 +13,7 @@ public class NumberOfEmployeesWhoMetTarget {
         System.out.print("Enter the target number: ");
         int target = input.nextInt();
         System.out.println(numberOfEmployeesWhoMetTarget(arr,target));
+        input.close();
     }
     public static int numberOfEmployeesWhoMetTarget(int[] hours, int target){
         int count = 0;

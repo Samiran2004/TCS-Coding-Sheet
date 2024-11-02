@@ -11,6 +11,7 @@ public class Equilibrium_Index {
             arr[i] = input.nextInt();
         }
         System.out.println(findPivot(arr));
+        input.close();
     }
 
     public static int findPivot(int[] arr){

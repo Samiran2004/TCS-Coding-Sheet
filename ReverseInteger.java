@@ -7,6 +7,7 @@ public class ReverseInteger {
         int integer = input.nextInt();
         System.out.println("Before reversing: " + integer);
         System.out.println("After reversing: " + revereInt(integer));
+        input.close();
     }
 
     public static int revereInt(int num) {

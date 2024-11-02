@@ -12,6 +12,7 @@ public class NonDesArray {
             arr[i] = input.nextInt();
         }
         System.out.println(checkNonDecArray(arr));
+        input.close();
     }
 
     public static boolean checkNonDecArray(int[] arr){

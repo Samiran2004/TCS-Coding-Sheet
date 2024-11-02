@@ -7,6 +7,7 @@ public class ValidParenthesis {
         System.out.print("Enter the parentheses strings: ");
         String parenthesesStr = input.next();
         System.out.println(isValidParentheses(parenthesesStr));
+        input.close();
     }
 
     public static boolean isValidParentheses(String str) {

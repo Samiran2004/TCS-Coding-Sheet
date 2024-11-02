@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -16,6 +15,7 @@ public class TwoSum {
         int target = input.nextInt();
 
         System.out.println(Arrays.toString(twoSum(arr, target)));
+        input.close();
     }
 
     public static int[] twoSum(int[] arr, int target) {

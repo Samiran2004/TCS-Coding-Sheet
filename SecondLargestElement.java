@@ -12,6 +12,7 @@ public class SecondLargestElement {
             arr[i] = input.nextInt();
         }
         System.out.println(findSecondLargest(arr));
+        input.close();
     }
 
     public static int findSecondLargest(int[] arr){
