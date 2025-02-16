@@ -14,6 +14,24 @@ public class ReverseLinkedList {
         tail = newNode;
     }
 
+    private void reverseList() {
+        if(head == null) {
+            System.out.println("List is empty...");
+            return;
+        }
+        Node prevNode = null;
+        Node currNode = head;
+        Node nextNode = null;
+        tail = head;
+        while (currNode != null) {
+            nextNode = currNode.next;
+            currNode.next = prevNode;
+            prevNode = currNode;
+            currNode = nextNode;
+        }
+        head = prevNode;
+    }
+
     private void display() {
         if (head == null) {
             System.out.println("List is empty...");
@@ -35,6 +53,9 @@ public class ReverseLinkedList {
         list1.insert(4);
         list1.insert(5);
         list1.insert(6);
+        list1.display();
+        System.out.println("After reversal: ");
+        list1.reverseList();
         list1.display();
     }
 }
